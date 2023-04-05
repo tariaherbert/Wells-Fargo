@@ -2,7 +2,7 @@
 
 ### Basic Information
 
-* **People or Organization Developing Model**: GWU Wells Fargo Credit Modeling Team
+* **Organization Developing Model**: GWU Wells Fargo Credit Modeling Team
 * **Model Date**: May, 2023
 * **Model Version**: 1.0
 * **License**: MIT
