@@ -48,7 +48,7 @@
 ### Quantitative Analysis
 
 #### Correlation Heatmap
-![Correlation Heatmap]()
+![Correlation Heatmap](https://github.com/tariaherbert/Wells-Fargo/blob/main/correlation%20heatmap.png)
 * **The correlation heatmap demonstrates the strength of relationships between variables.** 
 * **The heatmap demonstrates a moderately postive relationship between the following variables**:
    * Amount Past Due and Balance
