@@ -31,7 +31,7 @@
 | Status | target | categorical | 0: default (should not be approved) and 1: non-default (should be approved). the 0/1 ratio is nearly 1:5 |
 
 * **Source of training data**: 
-* **How training data was split into training and testing data**: 80% training and 20% testing
+* **How training data was randomly split into training and testing data**: 80% training and 20% testing
 * **Number of rows in training and testing data**:
   * Training rows: 80,000
   * Testing rows: 20,000
