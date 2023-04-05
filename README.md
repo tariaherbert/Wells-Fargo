@@ -49,11 +49,12 @@
 
 #### Correlation Heatmap
 ![Correlation Heatmap]()
-* **The correlation heatmap demonstrates the strength of relationships between variables. The heatmap demonstrates a moderately postive relationship between the following variables:
+* **The correlation heatmap demonstrates the strength of relationships between variables.** 
+* **The heatmap demonstrates a moderately postive relationship between the following variables**:
    * Amount Past Due and Balance
    * Amount Past Due and Delinquency Status
    * Balance and Utilization
    * Credit Inquiry and Delinquency Status
    * Credit Inquiry and Open Trade
    * Delinquency Status and Open Trade
-* ** There appears to be a moderately negative relationship between Status and Delinquency Status.
+* ** There appears to be a moderately negative relationship between Status and Delinquency Status.**
