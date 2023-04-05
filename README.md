@@ -45,7 +45,7 @@
   * PiML version:
 * **Hyperparameters or other settings of your model**:
 
-### Quantitative Analysis
+### Exploratory Data Analysis
 
 #### Correlation Heatmap
 ![Correlation Heatmap](https://github.com/tariaherbert/Wells-Fargo/blob/main/correlation%20heatmap.png)
@@ -58,3 +58,8 @@
    * Credit Inquiry and Open Trade
    * Delinquency Status and Open Trade
 * **The heatmap demonstrates a moderately negative relationship between Status and Delinquency Status.**
+
+### Model Performance
+
+
+
