@@ -61,5 +61,5 @@
 
 ### Model Performance
 
-![Correlation Heatmap] ()
+![Model Performance](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20performance.png)
 
