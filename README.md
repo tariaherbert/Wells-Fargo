@@ -36,7 +36,7 @@
   * Training rows: 80,000
   * Testing rows: 20,000
 
-### Model details
+### Model Details
 * **Columns used as inputs in the final model**: 
 * **Column(s) used as target(s) in the final model**: 'Status'
 * **Type of model**: 
