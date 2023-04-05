@@ -62,7 +62,16 @@
 
 #### Model Performance
 
-![Model Performance](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20performance.png)
+| Rank | Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
+| ---- | ----- | -------- | -------- | ------------- | --------- | --------- | -------------- |
+| 1 | ReLU-DNN | 0.6725 | 0.7354 | 0.7024 | 0.6725 | 0.7356 | 0.7030 |
+| 2 | XGB2 | 0.6721 | 0.7312 | 0.7023 | 0.6755 | 0.7372 | 0.7065 |
+| 3 | EBM | 0.6694 | 0.7310 | 0.7013 | 0.6736 | 0.7350 | 0.7060 |
+| 4 | GAMI-Net | 
+| 5 | FIGS |
+| 6 | GAM |
+| 7 | Tree | 
+| 8 | GLM | 
 
 #### Model Robustness
 
