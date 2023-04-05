@@ -1,4 +1,4 @@
-# Wells Fargo Credit Modeling Card
+# Wells Fargo Credit Modeling Model Card
 
 ### Basic Information
 
