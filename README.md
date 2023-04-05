@@ -56,4 +56,4 @@
    * Credit Inquiry and Delinquency Status
    * Credit Inquiry and Open Trade
    * Delinquency Status and Open Trade
-  ** There appears to be a moderately negative relationship between Status and Delinquency Status.
+* ** There appears to be a moderately negative relationship between Status and Delinquency Status.
