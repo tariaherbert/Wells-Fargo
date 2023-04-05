@@ -45,9 +45,10 @@
   * PiML version:
 * **Hyperparameters or other settings of your model**:
 
-### Exploratory Data Analysis
+### Quantitative Analysis
 
 #### Correlation Heatmap
+
 ![Correlation Heatmap](https://github.com/tariaherbert/Wells-Fargo/blob/main/correlation%20heatmap.png)
 * **The correlation heatmap demonstrates the strength of relationships between variables.** 
 * **The heatmap demonstrates a moderately postive relationship between the following variables**:
@@ -59,7 +60,14 @@
    * Delinquency Status and Open Trade
 * **The heatmap demonstrates a moderately negative relationship between Status and Delinquency Status.**
 
-### Model Performance
+#### Model Performance
 
 ![Model Performance](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20performance.png)
 
+#### Model Robustness
+
+![Model Robustness]()
+
+#### Model Fairness
+
+![Model Fairness]()
