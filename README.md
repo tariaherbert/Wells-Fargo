@@ -77,7 +77,13 @@
 
 #### Model Robustness
 
-![Model Robustness]()
+![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20all%20features.png)
+![Amount Past Due]()
+![Credit Inquiry]()
+![Delinquency Status]()
+![Mortgage]()
+![Open Trade]()
+![Utilization]()
 
 #### Model Fairness
 
