@@ -85,6 +85,8 @@
 ![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20open%20trade.png)
 ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20utilization.png)
 
+* **The model robustness output indicates that out of the three models, GAMI-Net is the most robust model. The GAMI-Net model reacts well to the imputation of noise into the data. XGB2 has the highest intital **
+
 #### Model Fairness
 
 ![Model Fairness]()
