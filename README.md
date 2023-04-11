@@ -89,31 +89,32 @@
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
    
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due%20plots.png)
-   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual being approved for credit decreases and denied for credit increases.
+   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance%20plots.png)
-   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual being approved for credit increases and denied for credit decreases.
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry%20plots.png)
-   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual being approved for credit decreases and denied for credit increases.
+   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status%20plots.png)
-   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual being approved for credit decreases and denied for credit increases.
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20mortgage%20plots.png)
-   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual being approved for credit increases and denied for credit decreases.
+   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
    
    ![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20open%20trade%20plots.png)
-   * There is a negative relationship between Status approval and Open Trade. As Open Trade increases, the probability of that individual being approved for credit decreases and denied for credit increases.
+   * There is a negative relationship between Status approval and Open Trade. As Open Trade increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization%20plots.png)
-   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual being approved for credit decreases and denied for credit increases.
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 #### Local Explainability: XGB2
 
 * **LIME and SHAP**:
    
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%20100%20plots.png)
+   * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features. 
 
 #### Global Explainability: GAMI-Net
 
