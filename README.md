@@ -87,8 +87,10 @@
    * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+   
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due%20plots.png)
    * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual being approved for credit decreases and denied for credit increase.
+   
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance%20plots.png)
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry%20plots.png)
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status%20plots.png)
