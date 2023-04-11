@@ -82,7 +82,7 @@
 #### Global Explainability: XGB2
 
 * **Permutation Feature Importance (PFI)**:
-   ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/XGB2%20PFI.png)
+   ![XGB2 PFI]()
    * Amount Past Due is the most influencial feature in the model
    * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
 
@@ -111,13 +111,13 @@
 
 ### Model Robustness
 
-![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20all%20features.png)
-![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20amount%20past%20due.png)
-![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20credit%20inquiry.png)
-![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20delinquincy%20status.png)
-![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20mortgage.png)
-![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20open%20trade.png)
-![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20utilization.png)
+![All Features]()
+![Amount Past Due]()
+![Credit Inquiry]()
+![Delinquency Status]()
+![Mortgage]()
+![Open Trade]()
+![Utilization]()
 
 * **The model robustness output indicates that out of the three models, GAMI-Net is the most robust model. The GAMI-Net model reacts well to the imputation of noise into the data. The XGB2 model has the highest accuracy associated with 0 pertubation (noise), but drops rapidly once noise is inputed into the data. After analyzing specific features, the XGB2 model responds the best to noise imputation for all features except Amount Past Due.**
 
