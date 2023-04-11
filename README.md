@@ -86,7 +86,7 @@
    * Amount Past Due is the most influencial feature in the model
    * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
 
-* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE) for XGB2_original**:
+* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
    ![Amount Past Due]()
    ![Balance]()
    ![Credit Inquiry]()
@@ -95,16 +95,19 @@
    ![Open Trade]()
    ![Utilization]()
 
-* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE) for XGB2_monotonic3**:
-   ![Amount Past Due]()
-   ![Balance]()
-   ![Credit Inquiry]()
-   ![Delinquency Status]()
-   ![Mortgage]()
-   ![Open Trade]()
-   ![Utilization]()
+##### Local Explainability: XGB2
+
+* **LIME and SHAP**:
+   ![Sample 0]()
+   ![Sample 5]()
+   ![Sample 50]()
+   ![Sample 100]()
 
 #### Interpretability
+
+##### Global Interpretability: XGB2
+
+##### Local Interpretability: XGB2
 
 #### Model Robustness
 
