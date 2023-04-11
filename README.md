@@ -45,7 +45,7 @@
   * PiML version:
 * **Hyperparameters or other settings of your model**:
 
-### Quantitative Analysis
+### Exploratory Data Analysis
 
 #### Correlation Heatmap
 
@@ -60,7 +60,7 @@
    * Delinquency Status and Open Trade
 * **The heatmap demonstrates a moderately negative relationship between Status and Delinquency Status.**
 
-#### Model Performance
+### Model Performance
 
 | Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
 | ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
@@ -75,11 +75,11 @@
 
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
-##### Hyperparameter Tuning
+#### Hyperparameter Tuning
 
-#### Explainability
+### Explainability
 
-##### Global Explainability: XGB2
+#### Global Explainability: XGB2
 
 * **Permutation Feature Importance (PFI)**:
    ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/XGB2%20PFI.png)
@@ -95,7 +95,7 @@
    ![Open Trade]()
    ![Utilization]()
 
-##### Local Explainability: XGB2
+#### Local Explainability: XGB2
 
 * **LIME and SHAP**:
    ![Sample 0]()
@@ -103,13 +103,13 @@
    ![Sample 50]()
    ![Sample 100]()
 
-#### Interpretability
+### Interpretability
 
-##### Global Interpretability: XGB2
+#### Global Interpretability: XGB2
 
-##### Local Interpretability: XGB2
+#### Local Interpretability: XGB2
 
-#### Model Robustness
+### Model Robustness
 
 ![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20all%20features.png)
 ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20amount%20past%20due.png)
@@ -121,6 +121,6 @@
 
 * **The model robustness output indicates that out of the three models, GAMI-Net is the most robust model. The GAMI-Net model reacts well to the imputation of noise into the data. The XGB2 model has the highest accuracy associated with 0 pertubation (noise), but drops rapidly once noise is inputed into the data. After analyzing specific features, the XGB2 model responds the best to noise imputation for all features except Amount Past Due.**
 
-#### Model Fairness
+### Model Fairness
 
 ![Model Fairness]()
