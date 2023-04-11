@@ -82,26 +82,26 @@
 #### Global Explainability: XGB2
 
 * **Permutation Feature Importance (PFI)**:
-   ![XGB2 PFI]()
+   ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20PFI.png)
    * Amount Past Due is the most influencial feature in the model
    * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
-   ![Amount Past Due]()
-   ![Balance]()
-   ![Credit Inquiry]()
-   ![Delinquency Status]()
-   ![Mortgage]()
-   ![Open Trade]()
-   ![Utilization]()
+   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due%20plots.png)
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance%20plots.png)
+   ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry%20plots.png)
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status%20plots.png)
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20mortgage%20plots.png)
+   ![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20open%20trade%20plots.png)
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization%20plots.png)
 
 #### Local Explainability: XGB2
 
 * **LIME and SHAP**:
-   ![Sample 0]()
-   ![Sample 5]()
-   ![Sample 50]()
-   ![Sample 100]()
+   ![Sample 0](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%200%20plots.png)
+   ![Sample 5](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%205%20plots.png)
+   ![Sample 50](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%2050%20plots.png)
+   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%20100%20plots.png)
 
 ### Interpretability
 
@@ -111,13 +111,13 @@
 
 ### Model Robustness
 
-![All Features]()
-![Amount Past Due]()
-![Credit Inquiry]()
-![Delinquency Status]()
-![Mortgage]()
-![Open Trade]()
-![Utilization]()
+![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20all%20features.png)
+![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20amount%20past%20due.png)
+![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20credit%20inquiry.png)
+![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20delinquincy%20status.png)
+![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20mortgage.png)
+![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20open%20trade.png)
+![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20utilization.png)
 
 * **The model robustness output indicates that out of the three models, GAMI-Net is the most robust model. The GAMI-Net model reacts well to the imputation of noise into the data. The XGB2 model has the highest accuracy associated with 0 pertubation (noise), but drops rapidly once noise is inputed into the data. After analyzing specific features, the XGB2 model responds the best to noise imputation for all features except Amount Past Due.**
 
