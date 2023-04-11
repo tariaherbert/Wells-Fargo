@@ -121,6 +121,8 @@
 
 * **Permutation Feature Importance (PFI)**:
 
+   ![GAMI-Net PFI]()
+
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
 
 #### Local Explainability: GAMI-Net
@@ -130,6 +132,8 @@
 #### Global Explainability: ReLU-DNN
 
 * **Permutation Feature Importance (PFI)**:
+
+   ![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20PFI.png)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
 
