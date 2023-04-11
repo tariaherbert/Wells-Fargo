@@ -133,9 +133,17 @@
 
 * **Permutation Feature Importance (PFI)**:
 
-   ![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20PFI.png)
+   ![ReLU-DNN PFI]()
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+
+   ![Amount Past Due]()
+   ![Balance]()
+   ![Credit Inquiry]()
+   ![Delinquency Status]()
+   ![Mortgage]()
+   ![Open Trade]()
+   ![Utilization]()
 
 #### Local Explainability: ReLU-DNN
 
