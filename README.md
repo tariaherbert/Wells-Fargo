@@ -117,6 +117,26 @@
    ![Sample 50](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%2050%20plots.png)
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%20100%20plots.png)
 
+#### Global Explainability: GAMI-Net
+
+* **Permutation Feature Importance (PFI)**:
+
+* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+
+#### Local Explainability: GAMI-Net
+
+* **LIME and SHAP**:
+
+#### Global Explainability: ReLU-DNN
+
+* **Permutation Feature Importance (PFI)**:
+
+* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+
+#### Local Explainability: ReLU-DNN
+
+* **LIME and SHAP**:
+
 ### Interpretability
 
 #### Global Interpretability: XGB2
