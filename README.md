@@ -82,6 +82,7 @@
 #### Global Explainability: XGB2
 
 * **Permutation Feature Importance (PFI)**:
+   
    ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20PFI.png)
    * Amount Past Due is the most influencial feature in the model
    * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
@@ -89,14 +90,19 @@
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
    
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due%20plots.png)
-   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual being approved for credit decreases and denied for credit increase.
-   
+   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual being approved for credit decreases and denied for credit increases.
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance%20plots.png)
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual being approved for credit increases and denied for credit decreases.
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry%20plots.png)
+   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual being approved for credit decreases and denied for credit increases.
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status%20plots.png)
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual being approved for credit decreases and denied for credit increases.
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20mortgage%20plots.png)
+   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual being approved for credit increases and denied for credit decreases.
    ![Open Trade](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20open%20trade%20plots.png)
+   * There is a negative relationship between Status approval and Open Trade. As Open Trade increases, the probability of that individual being approved for credit decreases and denied for credit increases.
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization%20plots.png)
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual being approved for credit decreases and denied for credit increases.
 
 #### Local Explainability: XGB2
 
