@@ -112,9 +112,7 @@
 #### Local Explainability: XGB2
 
 * **LIME and SHAP**:
-   ![Sample 0](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%200%20plots.png)
-   ![Sample 5](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%205%20plots.png)
-   ![Sample 50](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%2050%20plots.png)
+   
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%20100%20plots.png)
 
 #### Global Explainability: GAMI-Net
