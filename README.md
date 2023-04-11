@@ -75,6 +75,20 @@
 
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
+##### Hyperparameter Tuning
+
+* XGB2
+
+* **Tuning Options**:
+   *n_estimators:
+   *learning_rate:
+   *gamma:
+   *reg_alpha:
+   *reg_lambda:
+   *monotonic settings:
+    *feature_increasing:
+    *feature_decreasing:
+
 #### Model Robustness
 
 ![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/model%20robustness%20all%20features.png)
