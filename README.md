@@ -77,17 +77,34 @@
 
 ##### Hyperparameter Tuning
 
-* XGB2
+#### Explainability
 
-* **Tuning Options**:
-   *n_estimators:
-   *learning_rate:
-   *gamma:
-   *reg_alpha:
-   *reg_lambda:
-   *monotonic settings:
-    *feature_increasing:
-    *feature_decreasing:
+##### Global Explainability: XGB2
+
+* **Permutation Feature Importance (PFI)**:
+   ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/XGB2%20PFI.png)
+   * Amount Past Due is the most influencial feature in the model
+   * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
+
+* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE) for XGB2_original**:
+   ![Amount Past Due]()
+   ![Balance]()
+   ![Credit Inquiry]()
+   ![Delinquency Status]()
+   ![Mortgage]()
+   ![Open Trade]()
+   ![Utilization]()
+
+* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE) for XGB2_monotonic3**:
+   ![Amount Past Due]()
+   ![Balance]()
+   ![Credit Inquiry]()
+   ![Delinquency Status]()
+   ![Mortgage]()
+   ![Open Trade]()
+   ![Utilization]()
+
+#### Interpretability
 
 #### Model Robustness
 
