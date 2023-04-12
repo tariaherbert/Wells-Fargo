@@ -110,7 +110,7 @@
 
 * **LIME and SHAP**:
    
-   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20sample%20100%20plots.png)
+   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
    * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features. 
 
 #### Global Explainability: GAMI-Net
