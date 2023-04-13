@@ -117,9 +117,19 @@
 
 * **Permutation Feature Importance (PFI)**:
 
-   ![GAMI-Net PFI]()
+   ![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+
+   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20amount%20past%20due.png)
+   
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
+   
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
+   
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
+   
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
 
 #### Local Explainability: GAMI-Net
 
@@ -129,17 +139,21 @@
 
 * **Permutation Feature Importance (PFI)**:
 
-   ![ReLU-DNN PFI]()
+   ![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
 
-   ![Amount Past Due]()
-   ![Balance]()
-   ![Credit Inquiry]()
-   ![Delinquency Status]()
-   ![Mortgage]()
-   ![Open Trade]()
-   ![Utilization]()
+   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20amount%20past%20due.png)
+   
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20balance.png)
+   
+   ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20credit%20inquiry.png)
+   
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20delinquency%20status.png)
+   
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20mortgage.png)
+   
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
 
 #### Local Explainability: ReLU-DNN
 
@@ -149,7 +163,11 @@
 
 #### Global Interpretability: XGB2
 
+![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
+
 #### Local Interpretability: XGB2
+
+![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
 
 ### Model Robustness
 
