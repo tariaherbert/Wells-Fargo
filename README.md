@@ -11,7 +11,7 @@
 ### Intended Use
 * **Primary intended uses**: 
 * **Primary intended users**: 
-* **Out-of-scope use cases**:
+* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
 ### Training Data
 
