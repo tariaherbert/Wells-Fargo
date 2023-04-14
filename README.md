@@ -39,11 +39,11 @@
 ### Model Details
 * **Columns used as inputs in the final model**: 
 * **Column(s) used as target(s) in the final model**: 'Status'
-* **Type of model**: 
-* **Software used to implement the model**: 
+* **Type of final model**: 
+* **Software used to implement the models**: 
 * **Version of the modeling software**: 
   * PiML version:
-* **Hyperparameters or other settings of your model**:
+* **Hyperparameters or other settings of the final model**:
 
 ### Exploratory Data Analysis
 
@@ -74,11 +74,11 @@
 | 8 | GLM | 0.6521 | 0.7066 | 0.6920 | 0.6522 | 0.7077 | 0.6939 |
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
-#### Hyperparameter Tuning
+### XGB2
 
-### Explainability
+#### Explainability
 
-#### Global Explainability: XGB2
+##### Global
 
 * **Permutation Feature Importance (PFI)**:
    
@@ -106,14 +106,26 @@
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
-#### Local Explainability: XGB2
+##### Local
 
 * **LIME and SHAP**:
    
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
-   * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features. 
+   * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.
 
-#### Global Explainability: GAMI-Net
+#### Interpretability
+
+##### Global
+
+![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
+
+##### Local
+
+![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
+
+### GAMI-Net
+
+#### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -131,11 +143,13 @@
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
 
-#### Local Explainability: GAMI-Net
+#### Local Explainability
 
 * **LIME and SHAP**:
 
-#### Global Explainability: ReLU-DNN
+### ReLU-DNN
+
+#### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -155,19 +169,9 @@
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
 
-#### Local Explainability: ReLU-DNN
+#### Local Explainability
 
 * **LIME and SHAP**:
-
-### Interpretability
-
-#### Global Interpretability: XGB2
-
-![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
-
-#### Local Interpretability: XGB2
-
-![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
 
 ### Model Robustness
 
