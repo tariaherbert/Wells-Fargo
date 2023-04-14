@@ -43,7 +43,7 @@
 * **Software used to implement the models**: 
 * **Version of the modeling software**: 
    * Python version: 3.9.16
-   * PiML version: 
+   * PiML version: 4.3
 * **Hyperparameters or other settings of the final model**:
 
 ### Exploratory Data Analysis
