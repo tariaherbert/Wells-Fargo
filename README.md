@@ -82,8 +82,8 @@
 * **Global Explainability**:
    * Permutation Feature Importance (PFI):
       ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
-*     * Amount Past Due is the most influencial feature in the model
-*     * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
+*     ** Amount Past Due is the most influencial feature in the model
+*     ** Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
    
