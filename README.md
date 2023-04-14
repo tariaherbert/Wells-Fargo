@@ -42,7 +42,8 @@
 * **Type of final model**: 
 * **Software used to implement the models**: 
 * **Version of the modeling software**: 
-  * PiML version:
+   * Python version: 3.9.16
+   * PiML version: 
 * **Hyperparameters or other settings of the final model**:
 
 ### Exploratory Data Analysis
@@ -132,14 +133,19 @@
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
 
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20amount%20past%20due.png)
+   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
+   * 
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 ##### Local Explainability
 
