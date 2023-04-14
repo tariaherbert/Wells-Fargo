@@ -38,7 +38,7 @@
 
 ### Model Details
 * **Columns used as inputs in the final model**: 
-* **Column(s) used as target(s) in the final model**: 'Status'
+* **Column used as target in the final model**: 'Status'
 * **Type of final model**: 
 * **Software used to implement the models**: 
 * **Version of the modeling software**: 
