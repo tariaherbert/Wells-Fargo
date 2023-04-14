@@ -79,7 +79,7 @@
 
 #### XGB2
 
-##### Global Explainability**:
+##### Global Explainability:
 
 * **Permutation Feature Importance (PFI)**:
    
