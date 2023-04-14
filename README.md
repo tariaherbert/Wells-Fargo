@@ -74,11 +74,11 @@
 | 8 | GLM | 0.6521 | 0.7066 | 0.6920 | 0.6522 | 0.7077 | 0.6939 |
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
-### XGB2
+### Explainability and Interpretability
 
-#### Explainability
+#### XGB2
 
-##### Global
+##### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
    
@@ -106,26 +106,24 @@
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
-##### Local
+##### Local Explainability
 
 * **LIME and SHAP**:
    
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
    * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.
 
-#### Interpretability
-
-##### Global
+##### Global Interpretability
 
 ![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
 
-##### Local
+##### Local Interpretability
 
 ![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
 
-### GAMI-Net
+#### GAMI-Net
 
-#### Global Explainability
+##### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -143,13 +141,17 @@
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
 
-#### Local Explainability
+##### Local Explainability
 
 * **LIME and SHAP**:
 
-### ReLU-DNN
+##### Global Interpretability
 
-#### Global Explainability
+##### Local Interpretability
+
+#### ReLU-DNN
+
+##### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -169,9 +171,13 @@
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
 
-#### Local Explainability
+##### Local Explainability
 
 * **LIME and SHAP**:
+
+##### Global Interpretability
+
+##### Local Interpretability
 
 ### Model Robustness
 
