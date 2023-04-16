@@ -1,6 +1,6 @@
 # Wells Fargo Credit Modeling Model Card
 
-### Basic Information
+## Basic Information
 
 * **Organization Developing Model**: GWU Wells Fargo Credit Modeling Team
 * **Model Date**: May, 2023
@@ -8,12 +8,12 @@
 * **License**: Apache 2.0
 * **Model Implementation Code**: 
 
-### Intended Use
+## Intended Use
 * **Primary intended uses**: 
 * **Primary intended users**: 
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
-### Training Data
+## Training Data
 
 * Data Dictionary: 
 
@@ -36,7 +36,7 @@
   * Training rows: 80,000
   * Testing rows: 20,000
 
-### Model Details
+## Model Details
 * **Columns used as inputs in the final model**: 
 * **Column used as target in the final model**: 'Status'
 * **Type of final model**: 
@@ -46,9 +46,9 @@
    * PiML version: 4.3
 * **Hyperparameters or other settings of the final model**:
 
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 
-#### Correlation Heatmap
+### Correlation Heatmap
 
 ![Correlation Heatmap](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/correlation%20heatmap.png)
 * **The correlation heatmap demonstrates the strength of relationships between variables.** 
@@ -61,7 +61,7 @@
    * Delinquency Status and Open Trade
 * **The heatmap demonstrates a moderately negative relationship between Status and Delinquency Status.**
 
-### Model Performance
+## Model Performance
 
 | Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
 | ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
@@ -75,11 +75,11 @@
 | 8 | GLM | 0.6521 | 0.7066 | 0.6920 | 0.6522 | 0.7077 | 0.6939 |
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
-### Explainability and Interpretability
+## Explainability and Interpretability
 
-#### XGB2
+### XGB2
 
-##### Global Explainability:
+#### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
    
@@ -114,17 +114,17 @@
    ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
    * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.
 
-##### Global Interpretability
+#### Global Interpretability
 
 ![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
 
-##### Local Interpretability
+#### Local Interpretability
 
 ![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
 
-#### GAMI-Net
+### GAMI-Net
 
-##### Global Explainability
+#### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -147,17 +147,17 @@
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
-##### Local Explainability
+#### Local Explainability
 
 * **LIME and SHAP**:
 
-##### Global Interpretability
+#### Global Interpretability
 
-##### Local Interpretability
+#### Local Interpretability
 
-#### ReLU-DNN
+### ReLU-DNN
 
-##### Global Explainability
+#### Global Explainability
 
 * **Permutation Feature Importance (PFI)**:
 
@@ -177,15 +177,15 @@
    
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
 
-##### Local Explainability
+#### Local Explainability
 
 * **LIME and SHAP**:
 
-##### Global Interpretability
+#### Global Interpretability
 
-##### Local Interpretability
+#### Local Interpretability
 
-### Model Robustness
+## Model Robustness
 
 ![All Features](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20all%20features.png)
 ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20amount%20past%20due.png)
@@ -196,6 +196,6 @@
 ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/model%20robustness%20utilization.png)
 * **The model robustness output indicates that out of the three models, GAMI-Net is the most robust model. The GAMI-Net model reacts well to the imputation of noise into the data. The XGB2 model has the highest accuracy associated with 0 pertubation (noise), but drops rapidly once noise is inputed into the data. After analyzing specific features, the XGB2 model responds the best to noise imputation for all features except Amount Past Due and Balance.**
 
-### Model Fairness
+## Model Fairness
 
 ![Model Fairness]()
