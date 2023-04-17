@@ -133,9 +133,6 @@
    ![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
 
 * **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
-
-   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20amount%20past%20due.png)
-   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
    
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
@@ -152,6 +149,7 @@
 #### Local Explainability
 
 * **LIME and SHAP**:
+   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
 
 #### Global Interpretability
 
