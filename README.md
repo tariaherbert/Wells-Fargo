@@ -153,7 +153,11 @@
 
 #### Global Interpretability
 
+![GAMI-Net Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20global%20interpretability.png)
+
 #### Local Interpretability
+
+![GAMI-Net Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20local%20interpretability%2Cpng.png)
 
 ### ReLU-DNN
 
@@ -183,7 +187,11 @@
 
 #### Global Interpretability
 
+![ReLU-DNN Global Interpretability]()
+
 #### Local Interpretability
+
+![ReLU-DNN Local Interpretability]()
 
 ## Model Robustness
 
