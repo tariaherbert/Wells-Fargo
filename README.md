@@ -206,4 +206,15 @@
 
 ## Model Fairness
 
-![Model Fairness]()
+### XGB2
+
+![XGB2 Model Fairness]()
+
+### GAMI-Net
+
+![GAMI-Net Model Fairness]()
+
+### ReLU-DNN
+
+![ReLU-DNN Model Fairness]()
+
