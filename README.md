@@ -42,8 +42,10 @@
 * **Type of final model**: 
 * **Software used to implement the models**: 
 * **Version of the modeling software**: 
-   * Python version: 3.9.16
+   * Numpy version: 1.23.5
    * PiML version: 4.3
+   * Python version: 3.9.16
+   * XGBoost version: 1.7.2
 * **Hyperparameters or other settings of the final model**:
 
 ## Exploratory Data Analysis
