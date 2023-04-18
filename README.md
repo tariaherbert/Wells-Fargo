@@ -98,8 +98,8 @@
 ##### Permutation Feature Importance (PFI)
 
 ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
-* **Amount Past Due is the most influencial feature in the model
-* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
+* **Amount Past Due is the most influencial feature in the model**
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
 
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
@@ -164,21 +164,25 @@
 
 #### Global Explainability
 
-* **Permutation Feature Importance (PFI)**:
+##### Permutation Feature Importance (PFI)
 
-   ![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
+![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
 
-* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
-   
+##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
+
+* **Balance**
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
+* **Delinquency Status**
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
    * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
+* **Mortgage**
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
    * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
-   
+  
+* **Utilization**
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
@@ -199,11 +203,11 @@
 
 #### Global Explainability
 
-* **Permutation Feature Importance (PFI)**:
+##### Permutation Feature Importance (PFI)
 
    ![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
 
-* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
+##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20amount%20past%20due.png)
    
