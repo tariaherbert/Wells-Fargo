@@ -221,9 +221,7 @@
 | Race 0 | Mortgage | 0.977058 | 0.662600 |
 | Gender 0 | Mortgage | 0.930609 | 0.662600 |
 
-![Binned Mortgage for Race]()
-
-![Binned Mortgage for Gender]()
+![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
 
 ### GAMI-Net Adverse Impact Ratio (AIR)
 
