@@ -26,8 +26,8 @@
 | Credit Inquiry | input | ordinal | number of credit inquiries in the last 12 months |
 | Open Trade | input | ordinal | number of open credit accounts |
 | Utilization | input | numerical | % credit utilization, the sum of all your balances, divided by the sum of your cards' credit limits |
-| Gender | excluded | categorical | two kinds of gender (0: reference group, 1: protected group) |
-| Race | excluded | categorical | two kinds of race (0: reference group, 1: protected group)|
+| Gender | excluded | categorical | two kinds of gender (0: protected group, 1: reference group) |
+| Race | excluded | categorical | two kinds of race (0: protected group, 1: reference group)|
 | Status | target | categorical | 0: default (should not be approved) and 1: non-default (should be approved). the 0/1 ratio is nearly 1:5 |
 
 * **Source of training data**: 
@@ -214,15 +214,36 @@
 
 ## Model Fairness
 
-### XGB2
+### XGB2 Adverse Impact Ratio (AIR)
 
-![XGB2 Model Fairness]()
+| Protected Groups | Feature Configuration | AIR | ACC |
+| ---------------- | --------------------- | --- | --- |
+| Race 0 | Mortgage | 0.977058 | 0.662600 |
+| Gender 0 | Mortgage | 0.930609 | 0.662600 |
 
-### GAMI-Net
+![Binned Mortgage for Race]()
 
-![GAMI-Net Model Fairness]()
+![Binned Mortgage for Gender]()
 
-### ReLU-DNN
+### GAMI-Net Adverse Impact Ratio (AIR)
 
-![ReLU-DNN Model Fairness]()
+| Protected Groups | Feature Configuration | AIR | ACC |
+| ---------------- | --------------------- | --- | --- |
+| Race 0 | Mortgage | 0.913163 | 0.657870 |
+| Gender 0 | Balance | 0.903219 | 0.661800 |
+
+![Binned Mortgage for Race]()
+
+![Binned Balance for Gender]()
+
+### ReLU-DNN Adverse Impact Ratio (AIR)
+
+| Protected Groups | Feature Configuration | AIR | ACC |
+| ---------------- | --------------------- | --- | --- |
+| Race 0 |  |  |  |
+| Gender 0 |  |  |  |
+
+![]()
+
+![]()
 
