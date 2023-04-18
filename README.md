@@ -67,15 +67,23 @@
 
 | Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
 | ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
-| 1 | ReLU-DNN | 0.6725 | 0.7354 | 0.7024 | 0.6725 | 0.7356 | 0.7030 |
-| 2 | XGB2 | 0.6721 | 0.7312 | 0.7023 | 0.6755 | 0.7372 | 0.7065 |
-| 3 | EBM | 0.6694 | 0.7310 | 0.7013 | 0.6736 | 0.7350 | 0.7060 |
-| 4 | GAMI-Net | 0.6691 | 0.7280 | 0.7026 | 0.6701 | 0.7292 | 0.7045 |
+| 1 | ReLU-DNN | 0.6723 | 0.7334 | 0.6969 | 0.6711 | 0.7343 | 0.6968 |
+| 2 | XGB2 | 0.6712 | 0.7313 | 0.7020 | 0.6758 | 0.7373 | 0.7072 |
+| 3 | EBM | 0.6696 | 0.7311 | 0.7012 | 0.6734 | 0.7350 | 0.7057 |
+| 4 | GAMI-Net | 0.6690 | 0.7281 | 0.6980 | 0.6698 | 0.7295 | 0.6998 |
 | 5 | FIGS | 0.6681 | 0.7274 | 0.6926 | 0.6746 | 0.7371 | 0.6997 |
-| 6 | GAM | 0.6670 | 0.7224 | 0.6956 | 0.6668 | 0.7229 | 0.6962 |
+| 6 | GAM | 0.6669 | 0.7224 | 0.6955 | 0.6669 | 0.7229 | 0.6962 |
 | 7 | Tree | 0.6654 | 0.7222 | 0.6976 | 0.6709 | 0.7271 | 0.7033 |
-| 8 | GLM | 0.6521 | 0.7066 | 0.6920 | 0.6522 | 0.7077 | 0.6939 |
+| 8 | GLM | 0.6523 | 0.7066 | 0.6922 | 0.6523 | 0.7077 | 0.6939 |
 * **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
+
+### Top 3 Models with Hyperparameter and Monotonicity Settings
+
+| Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
+| ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
+| 1 | XGB2 | 0.6715 | 0.7306 | 0.6988 | 0.6748 | 0.7345 | 0.7027 |
+| 2 | GAMI-Net | 0.6627 | 0.7169 | 0.6886 | 0.6641 | 0.7180 | 0.6909 |
+| 3 | ReLU-DNN | 0.6676 | 0.7263 | 0.7001 | 0.6681 | 0.7266 | 0.7020 |
 
 ## Explainability and Interpretability
 
