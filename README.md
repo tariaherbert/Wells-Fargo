@@ -66,7 +66,7 @@
 ### Feature Importance
 
 ![Feature Importance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/feature%20importance.png)
-* **The feature importance plot displays how useful and often a model finds each feature when making accurate predictions about the target variable. 
+* **The feature importance plot displays how useful and often a model finds each feature when making accurate predictions about the target variable. The machine learning models  ** 
 
 ## Model Performance
 
