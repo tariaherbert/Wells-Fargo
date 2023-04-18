@@ -63,10 +63,14 @@
    * Delinquency Status and Open Trade
 * **The heatmap demonstrates a moderately negative relationship between Status and Delinquency Status.**
 
+### Feature Importance
+
+![Feature Importance]()
+
 ## Model Performance
 
-| Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
-| ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
+| Rank | Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
+| ---- | ----- | -------- | -------- | ------------- | --------- | --------- | -------------- |
 | 1 | ReLU-DNN | 0.6723 | 0.7334 | 0.6969 | 0.6711 | 0.7343 | 0.6968 |
 | 2 | XGB2 | 0.6712 | 0.7313 | 0.7020 | 0.6758 | 0.7373 | 0.7072 |
 | 3 | EBM | 0.6696 | 0.7311 | 0.7012 | 0.6734 | 0.7350 | 0.7057 |
@@ -79,8 +83,8 @@
 
 ### Top 3 Models with Hyperparameter and Monotonicity Settings
 
-| Rank |   Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
-| ---- | ------- | -------- | -------- | ------------- | --------- | --------- | -------------- |
+| Rank | Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
+| ---- | ----- | -------- | -------- | ------------- | --------- | --------- | -------------- |
 | 1 | XGB2 | 0.6715 | 0.7306 | 0.6988 | 0.6748 | 0.7345 | 0.7027 |
 | 2 | ReLU-DNN | 0.6676 | 0.7263 | 0.7001 | 0.6681 | 0.7266 | 0.7020 |
 | 3 | GAMI-Net | 0.6627 | 0.7169 | 0.6886 | 0.6641 | 0.7180 | 0.6909 |
@@ -91,33 +95,57 @@
 
 #### Global Explainability
 
-* **Permutation Feature Importance (PFI)**:
-   
-   ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
-   * Amount Past Due is the most influencial feature in the model
-   * Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
+##### Permutation Feature Importance (PFI)
 
-* **Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)**:
-   
+![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
+* **Amount Past Due is the most influencial feature in the model
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)
+
+##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
+
+* **Amount Past Due**
+   * Without Monotonicity:
+   ![Amount Past Due]()
+   * With Monotonicity:
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due.png)
    * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
    
+* **Balance**
+   * Without Monotonicity:
+   ![Balance]()
+   * With Monotonicity:
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance.png)
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
+* **Credit Inquiry**
+   * Without Monotonicity:
+   ![Credit Inquiry]()
+   * With Monotonicity:
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry.png)
    * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
    
+* **Delinquency Status**
+   * Without Monotonicity:
+   ![Delinquency Status]()
+   * With Monotonicity:
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status.png)
    * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
+* **Mortgage**
+   * Without Monotonicity:
+   ![Mortgage]()
+   * With Monotonicity:
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20mortgage.png)
    * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
    
+* **Utilization**
+   * Without Monotonicity:
+   ![Utilization]()
+   * With Monotonicity:
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
-##### Local Explainability
+#### Local Explainability
 
 * **LIME and SHAP**:
    
