@@ -171,19 +171,31 @@
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
 * **Balance**
+   * Without Monotonicity:
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
+   * With Monotonicity:
+   ![Balance]()
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
 * **Delinquency Status**
+   * Without Monotonicity:
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
+   * With Monotonicity:
+   ![Delinquency Status]()
    * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
 * **Mortgage**
+   * Without Monotonicity:
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
+   * With Monotonicity:
+   ![Mortgage]()
    * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
   
 * **Utilization**
+   * Without Monotonicity:
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
+   * With Monotonicity:
+   ![Utilization]
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 #### Local Explainability
