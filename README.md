@@ -301,3 +301,22 @@
 
 ![]()
 
+## Potential Next Steps
+* **Apply this end-to-end model process on a real dataset**
+   * Potentially launch this model with a small bank or credit union
+
+## Risk Considerations
+* **PiML toolbox is a risk aware machine learning package**
+* **PiML was used to mitigate risks and build models that address and find the balance between the following metrics**:
+   * Accuracy
+   * Bias/Fairness
+   * Reliability
+   * Robustness
+   * Resilience
+   * Transparency
+
+## Ethical Considerations
+* **Potential negative impacts of using this model**:
+   * 
+* **Potential uncertainties relating to the impacts of using this model**:
+   * 
