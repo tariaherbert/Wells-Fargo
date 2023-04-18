@@ -232,9 +232,9 @@
 | Race 0 | Mortgage | 0.913163 | 0.657870 |
 | Gender 0 | Balance | 0.903219 | 0.661800 |
 
-![Binned Mortgage for Race]()
+![Binned Mortgage for Race](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20fairness%20race.png)
 
-![Binned Balance for Gender]()
+![Binned Balance for Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20fairness%20gender.png)
 
 ### ReLU-DNN Adverse Impact Ratio (AIR)
 
