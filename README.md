@@ -171,31 +171,31 @@
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
 * **Balance**
-   * Without Hyperparameter Tuning and Monotonicity:
+   * Without Monotonicity:
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
-   * With Hyperparameter Tuning and Monotonicity:
-   ![Balance]()
+   * With Monotonicity:
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20balance.png)
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
 * **Delinquency Status**
-   * Without Hyperparameter Tuning and Monotonicity:
+   * Without Monotonicity:
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
-   * With Hyperparameter Tuning and Monotonicity:
-   ![Delinquency Status]()
+   * With Monotonicity:
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20delinquency%20status.png)
    * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
 * **Mortgage**
-   * Without Hyperparameter Tuning and Monotonicity:
+   * Without Monotonicity:
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
-   * With Hyperparameter Tuning and Monotonicity:
-   ![Mortgage]()
+   * With Monotonicity:
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20mortgage.png)
    * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
   
 * **Utilization**
-   * Without Hyperparameter Tuning and Monotonicity:
+   * Without Monotonicity:
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
-   * With Hyperparameter Tuning and Monotonicity:
-   ![Utilization]
+   * With Monotonicity:
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 #### Local Explainability
