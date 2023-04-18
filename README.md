@@ -9,8 +9,8 @@
 * **Model Implementation Code**: 
 
 ## Intended Use
-* **Primary intended uses**: 
-* **Primary intended users**: 
+* **Primary intended uses**: This model is an example of an end-to-end credit modeling process that is intended to be used as a guide for current and future credit modelers.
+* **Primary intended users**: Wells Fargo Team, Patrick Hall, and GWU Students in DNSC 6317
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
 ## Training Data
