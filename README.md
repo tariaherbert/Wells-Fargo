@@ -319,6 +319,6 @@
 
 ## Ethical Considerations
 * **Potential negative impacts of using this model**:
-   * 
+   * The final model produced an accuracy of 
 * **Potential uncertainties relating to the impacts of using this model**:
-   * 
+   * The model will need to be monitored into the future for its fairness, performance, and robustness to ensure it is still operating efficiently and effectively.
