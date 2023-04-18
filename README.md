@@ -66,7 +66,7 @@
 ### Feature Importance
 
 ![Feature Importance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/feature%20importance.png)
-* **The feature importance plot displays how useful and often a model finds each feature when making accurate predictions about the target variable. The machine learning models  ** 
+* **The feature importance plot displays how useful and often a model finds each feature when making accurate predictions about the target variable. Amount Past Due and Utilization are used the most in the machine learning models. Open Trade was removed from the models because it has no influence when making prediction about the target variable (Status).** 
 
 ## Model Performance
 
@@ -298,9 +298,9 @@
 | Race 0 |  |  |  |
 | Gender 0 |  |  |  |
 
-![]()
+![Binned for Race]()
 
-![]()
+![Binned for Gender]()
 
 ## Model Comparison to Black-Box Modeling
 
