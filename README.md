@@ -40,7 +40,7 @@
 * **Columns used as inputs in the final model**: 
 * **Column used as target in the final model**: 'Status'
 * **Type of final model**: 
-* **Software used to implement the models**: 
+* **Software used to implement the models**: PiML, Python
 * **Version of the modeling software**: 
    * Numpy version: 1.23.5
    * PiML version: 4.3
