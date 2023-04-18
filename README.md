@@ -221,17 +221,29 @@
 
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
+* **Amount Past Due**
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20amount%20past%20due.png)
-   
+   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+* **Balance**
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20balance.png)
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
+* **Credit Inquiry**
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20credit%20inquiry.png)
+   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
    
+* **Delinquency Status**
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20delinquency%20status.png)
-   
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+* **Mortgage**
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20mortgage.png)
+   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
    
+* **Utilization**
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 #### Local Explainability
 
