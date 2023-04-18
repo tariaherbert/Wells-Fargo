@@ -149,10 +149,10 @@
 
 #### Local Explainability
 
-* **LIME and SHAP**:
-   
-   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
-   * LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.
+##### LIME and SHAP
+
+![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
+*  **LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.**
 
 #### Global Interpretability
 
@@ -204,8 +204,10 @@
 
 #### Local Explainability
 
-* **LIME and SHAP**:
-   ![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
+##### LIME and SHAP
+
+![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
+* **
 
 #### Global Interpretability
 
@@ -253,15 +255,18 @@
 
 #### Local Explainability
 
-* **LIME and SHAP**:
+##### LIME and SHAP
+
+![Sample 90](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
+* **
 
 #### Global Interpretability
 
-![ReLU-DNN Global Interpretability]()
+![ReLU-DNN Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20global%20interpretability.png)
 
 #### Local Interpretability
 
-![ReLU-DNN Local Interpretability]()
+![ReLU-DNN Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20local%20interpretability.png)
 
 ## Model Robustness
 
