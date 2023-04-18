@@ -105,44 +105,44 @@
 
 * **Amount Past Due**
    * Without Monotonicity:
-   ![Amount Past Due]()
-   * With Monotonicity:
    ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20amount%20past%20due.png)
+   * With Monotonicity:
+   ![Amount Past Due]()
    * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
    
 * **Balance**
    * Without Monotonicity:
-   ![Balance]()
-   * With Monotonicity:
    ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20balance.png)
+   * With Monotonicity:
+   ![Balance]()
    * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
    
 * **Credit Inquiry**
    * Without Monotonicity:
-   ![Credit Inquiry]()
-   * With Monotonicity:
    ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20credit%20inquiry.png)
+   * With Monotonicity:
+   ![Credit Inquiry]()
    * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
    
 * **Delinquency Status**
    * Without Monotonicity:
-   ![Delinquency Status]()
-   * With Monotonicity:
    ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20delinquency%20status.png)
+   * With Monotonicity:
+   ![Delinquency Status]()
    * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
    
 * **Mortgage**
    * Without Monotonicity:
-   ![Mortgage]()
-   * With Monotonicity:
    ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20mortgage.png)
+   * With Monotonicity:
+   ![Mortgage]()
    * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
    
 * **Utilization**
    * Without Monotonicity:
-   ![Utilization]()
-   * With Monotonicity:
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20utilization.png)
+   * With Monotonicity:
+   ![Utilization]()
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
 #### Local Explainability
