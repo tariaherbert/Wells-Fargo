@@ -80,7 +80,6 @@
 | 6 | GAM | 0.6669 | 0.7224 | 0.6955 | 0.6669 | 0.7229 | 0.6962 |
 | 7 | Tree | 0.6654 | 0.7222 | 0.6976 | 0.6709 | 0.7271 | 0.7033 |
 | 8 | GLM | 0.6523 | 0.7066 | 0.6922 | 0.6523 | 0.7077 | 0.6939 |
-* **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly.**
 
 ### Top 3 Models with Hyperparameter and Monotonicity Settings
 
@@ -89,6 +88,8 @@
 | 1 | XGB2 | 0.6715 | 0.7306 | 0.6988 | 0.6748 | 0.7345 | 0.7027 |
 | 2 | ReLU-DNN | 0.6676 | 0.7263 | 0.7001 | 0.6681 | 0.7266 | 0.7020 |
 | 3 | GAMI-Net | 0.6627 | 0.7169 | 0.6886 | 0.6641 | 0.7180 | 0.6909 |
+
+* **Based on the test ACC metric results, out of the 8 models the best performing models are ReLU-DNN, XGB2, EBM, and GAMI-Net. Further analysis will be continued with the following models: ReLU-DNN, XGB2, and GAMI-Net. GAMI-Net was selected over EBM because XGB2 and EBM operate similarly. After applying hyperparameter and monotonicity settings, XGB2 has the best performance of the three models.**
 
 ## Explainability and Interpretability
 
@@ -99,7 +100,7 @@
 ##### Permutation Feature Importance (PFI)
 
 ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
-* **Amount Past Due is the most influencial feature in the model**
+* **Amount Past Due is the most influencial feature in this model**
 * **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
 
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
@@ -168,6 +169,8 @@
 ##### Permutation Feature Importance (PFI)
 
 ![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
+* **Delinquency Status is the most influencial feature in this model**
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
 
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
@@ -218,7 +221,9 @@
 
 ##### Permutation Feature Importance (PFI)
 
-   ![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
+![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
+* **Delinquency Status is the most influencial feature in this model**
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
 
 ##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
 
