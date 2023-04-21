@@ -15,7 +15,7 @@
 
 ## Training Data
 
-* Data Dictionary: 
+* **Data Dictionary**: 
 
 | Name | Modeling Role | Data Type | Description|
 | ---- | ------------- | --------- | ---------- |
@@ -257,7 +257,7 @@
 
 ##### LIME and SHAP
 
-![Sample 90](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
+![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
 * **
 
 #### Global Interpretability
@@ -285,8 +285,8 @@
 
 | Protected Groups | Feature Configuration | AIR | ACC |
 | ---------------- | --------------------- | --- | --- |
-| Race 0 | Mortgage | 0.977058 | 0.662600 |
-| Gender 0 | Mortgage | 0.930609 | 0.662600 |
+| Race 0 | Mortgage | 0.956147 | 0.662930 |
+| Gender 0 | Mortgage | 0.928242 | 0.662930 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
 
@@ -305,12 +305,10 @@
 
 | Protected Groups | Feature Configuration | AIR | ACC |
 | ---------------- | --------------------- | --- | --- |
-| Race 0 |  |  |  |
-| Gender 0 |  |  |  |
+| Race 0 | Mortgage | 0.908938 | 0.664070 |
+| Gender 0 | Mortgage | 0.979822 | 0.664070 |
 
-![Binned for Race]()
-
-![Binned for Gender]()
+![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20fairness.png)
 
 ## Model Comparison to Black-Box Modeling
 
