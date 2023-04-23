@@ -283,28 +283,28 @@
 
 ### XGB2 Adverse Impact Ratio (AIR)
 
-| Protected Groups | Feature Configuration | AIR | ACC |
-| ---------------- | --------------------- | --- | --- |
-| Race 0 | Mortgage | 0.956147 | 0.662930 |
-| Gender 0 | Mortgage | 0.928242 | 0.662930 |
+| Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
+| ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
+| Race 0 | Mortgage |  |  | 0.956147 | 0.662930 |
+| Gender 0 | Mortgage |  |  | 0.928242 | 0.662930 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
 
 ### GAMI-Net Adverse Impact Ratio (AIR)
 
-| Protected Groups | Feature Configuration | AIR | ACC |
-| ---------------- | --------------------- | --- | --- |
-| Race 0 | Mortgage | 0.913163 | 0.657870 |
-| Gender 0 | Mortgage | 0.918726 | 0.657870 |
+| Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
+| ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
+| Race 0 | Mortgage |  |  | 0.913163 | 0.657870 |
+| Gender 0 | Mortgage |  |  | 0.918726 | 0.657870 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20fairness.png)
 
 ### ReLU-DNN Adverse Impact Ratio (AIR)
 
-| Protected Groups | Feature Configuration | AIR | ACC |
-| ---------------- | --------------------- | --- | --- |
-| Race 0 | Mortgage | 0.908938 | 0.664070 |
-| Gender 0 | Mortgage | 0.979822 | 0.664070 |
+| Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
+| ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
+| Race 0 | Mortgage |  |  | 0.908938 | 0.664070 |
+| Gender 0 | Mortgage |  |  | 0.979822 | 0.664070 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20fairness.png)
 
