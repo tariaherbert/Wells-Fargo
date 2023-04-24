@@ -285,8 +285,8 @@
 
 | Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
 | ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
-| Race 0 | Mortgage |  |  | 0.956147 | 0.662930 |
-| Gender 0 | Mortgage |  |  | 0.928242 | 0.662930 |
+| Gender 0 | Mortgage | 0.821672 | 0.674150 | 0.928242 | 0.662930 |
+| Race 0 | Mortgage | 0.603988 | 0.674150 | 0.956147 | 0.662930 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
 
@@ -294,8 +294,8 @@
 
 | Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
 | ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
-| Race 0 | Mortgage |  |  | 0.913163 | 0.657870 |
-| Gender 0 | Mortgage |  |  | 0.918726 | 0.657870 |
+| Gender 0 | Mortgage | 0.871185 | 0.663810 | 0.918726 | 0.657870 |
+| Race 0 | Mortgage | 0.646503 | 0.663810 | 0.913163 | 0.657870 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20fairness.png)
 
@@ -303,8 +303,8 @@
 
 | Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
 | ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
-| Race 0 | Mortgage |  |  | 0.908938 | 0.664070 |
-| Gender 0 | Mortgage |  |  | 0.979822 | 0.664070 |
+| Gender 0 | Mortgage | 0.915365 | 0.668010 | 0.979822 | 0.664070 |
+| Race 0 | Mortgage | 0.683560 | 0.668010 | 0.908938 | 0.664070 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20fairness.png)
 
