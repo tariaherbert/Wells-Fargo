@@ -310,12 +310,14 @@
 
 ## Model Comparison to Black-Box Modeling
 
-## Potential Next Steps
-* **Apply this end-to-end model process on a real dataset**
-   * Potentially launch this model with a small bank or credit union
-   * Adjust additional hyperparameter settings
+## Ethical Concerns
+* **Potential negative impacts of using this model**:
+   * The final model produced an accuracy of 
+* **Potential uncertainties relating to the impacts of using this model**:
+   * The model will need to be monitored into the future for its fairness, performance, and robustness to ensure it is still operating efficiently and effectively.
+   * The model contains personal data that should be anonymized to protect the privacy of customers. There should be security in place to prevent hackers and malicious software from gaining unauthorized access and altering the code for malicious intent.
 
-## Risk Considerations and Ethical Concerns
+## Risk Considerations
 * **PiML toolbox is a risk aware machine learning package**
 * **PiML was used to mitigate risks and build models that address and find the balance between the following metrics**:
    * Accuracy
@@ -324,8 +326,8 @@
    * Robustness
    * Resilience
    * Transparency
-* **Potential negative impacts of using this model**:
-   * The final model produced an accuracy of 
-* **Potential uncertainties relating to the impacts of using this model**:
-   * The model will need to be monitored into the future for its fairness, performance, and robustness to ensure it is still operating efficiently and effectively.
-   * The model contains personal data that should be anonymized to protect the privacy of customers. There should be security in place to prevent hackers and malicious software from gaining unauthorized access and altering the code for malicious intent.
+
+## Potential Next Steps
+* **Apply this end-to-end model process on a real dataset**
+   * Potentially launch this model with a small bank or credit union
+* **Adjust additional hyperparameter settings**
