@@ -310,6 +310,9 @@
 
 ## Model Comparison to Black-Box Modeling
 
+![LGMB Robustness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/LGMB%20robustness.png)
+* **Black box models are structured in a manner such that it takes in the input and gives an output without showing the user how the output was arrived at. In other words, it is not transparent, explainable or interpretable. In the case of credit modeling if it were to accept or reject an individual the user of the model would not be able to explain the reason for accepting or rejecting any particular individual. Similarly, it is possible to test the fairness and robustness of these models, but it would not be easy for the user to understand why the model was unfair or not robust. These models are highly complex hence they are difficult to debug and edit but also due to the complexity there are higher chances of it being manipulated without leaving a trace.** 
+
 ## Ethical Concerns
 * **Potential negative impacts of using this model**:
    * The final model produced an accuracy of 
