@@ -6,7 +6,7 @@
 * **Model Date**: May, 2023
 * **Model Version**: 1.0
 * **License**: Apache 2.0
-* **Model Implementation Code**: 
+* **Model Implementation Code**: [Wells_Fargo.ipynb](https://github.com/tariaherbert/Wells-Fargo/blob/main/Wells_Fargo.ipynb) 
 
 ## Intended Use
 * **Primary intended uses**: This model is an example of an end-to-end credit modeling process that is intended to be used as a guide for current and future credit modelers.
