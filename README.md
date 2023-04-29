@@ -315,7 +315,7 @@
 
 ## Ethical Concerns
 * **Potential negative impacts of using this model**:
-   * The final model has an accuracy of 65.87%%, which means there is a 34.13% chance that the model makes inaccurate decisions. This can become costly for the company.
+   * The final model has an accuracy of 65.87%, which means there is a 34.13% chance that the model makes inaccurate decisions. This can become costly for the company.
 * **Potential uncertainties relating to the impacts of using this model**:
    * The model will need to be monitored into the future for its fairness, performance, and robustness to ensure it is still operating efficiently and effectively.
    * The model contains personal data that should be anonymized to protect the privacy of customers. There should be security in place to prevent hackers and malicious software from gaining unauthorized access and altering the code for malicious intent.
