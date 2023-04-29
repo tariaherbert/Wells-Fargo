@@ -326,6 +326,29 @@
 
 ![New Model Robustness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/new%20model%20robustness.png)
 
+### Model Fairness
+
+#### XGB2 Adverse Impact Ratio (AIR)
+
+| Protected Groups | AIR |
+| ---------------- | --- |
+| Gender 0 |
+| Race 0 |
+
+#### GAMI-Net Adverse Impact Ratio (AIR)
+
+| Protected Groups | AIR |
+| ---------------- | --- |
+| Gender 0 | 0.931581 |
+| Race 0 | 0.911592 |
+
+#### ReLU-DNN Adverse Impact Ratio (AIR)
+
+| Protected Groups | AIR |
+| ---------------- | --- |
+| Gender 0 |
+| Race 0 |
+
 ### Model Comparison to Black-Box Modeling
 
 ![LGMB Robustness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/LGMB%20robustness.png)
