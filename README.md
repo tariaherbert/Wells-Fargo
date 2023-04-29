@@ -335,6 +335,8 @@
 | Gender 0 | 0.916539 |
 | Race 0 | 0.933909 |
 
+![XGB2 new fairness]()
+
 #### GAMI-Net Adverse Impact Ratio (AIR)
 
 | Protected Groups | AIR |
@@ -342,12 +344,16 @@
 | Gender 0 | 0.931581 |
 | Race 0 | 0.911592 |
 
+![GAMI-Net new fairness]()
+
 #### ReLU-DNN Adverse Impact Ratio (AIR)
 
 | Protected Groups | AIR |
 | ---------------- | --- |
 | Gender 0 | 0.990895 |
 | Race 0 | 0.954666 |
+
+![ReLU-DNN new fairness]()
 
 ### Model Comparison to Black-Box Modeling
 
