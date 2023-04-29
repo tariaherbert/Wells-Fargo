@@ -200,17 +200,96 @@
 
 ## Explainability and Interpretability
 
-### XGB2
+### Global Explainability
 
-#### Global Explainability
+#### Permutation Feature Importance (PFI)
 
-##### Permutation Feature Importance (PFI)
+* **Permutation Feature Importance (PFI): Computes the change in prediction performance as the measure of feature importance**
+   * Breaks the relationship between the feature and the target, thus the drop in the model score is indicative of how much the model depends on the feature
+
+##### GAMI-Net
+
+![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
+* **Delinquency Status is the most influencial feature in this model**
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
+
+##### ReLU-DNN
+
+![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
+* **Delinquency Status is the most influencial feature in this model**
+* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
+
+##### XGB2
 
 ![XGB2 PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20pfi.png)
 * **Amount Past Due is the most influencial feature in this model**
 * **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
 
-##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
+#### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
+
+* **Partial Dependence Plot (PDP): used to understand how the prediction varies as a function of variables of interest, by averaging over other variables**
+   * Not recommended if the features are correlated
+* **Accumulated Local Effects (ALE): describes how features affect a model prediction**
+   * Shares the same goal as PDP (Partial Dependence Plot)
+   * Overcomes the features correlation problem by averaging and accumulating the difference in predictions across the conditional distribution, limiting the effects of specific features
+
+##### GAMI-Net
+
+* **Balance**
+   * Without Monotonicity:
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
+   * With Monotonicity:
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20balance.png)
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
+   
+* **Delinquency Status**
+   * Without Monotonicity:
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
+   * With Monotonicity:
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20delinquency%20status.png)
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
+   
+* **Mortgage**
+   * Without Monotonicity:
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
+   * With Monotonicity:
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20mortgage.png)
+   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
+  
+* **Utilization**
+   * Without Monotonicity:
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
+   * With Monotonicity:
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20utilization.png)
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+##### ReLU-DNN
+
+* **Amount Past Due**
+   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20amount%20past%20due.png)
+   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+* **Balance**
+   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20balance.png)
+   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
+   
+* **Credit Inquiry**
+   ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20credit%20inquiry.png)
+   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
+   
+* **Delinquency Status**
+   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20delinquency%20status.png)
+   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+* **Mortgage**
+   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20mortgage.png)
+   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
+   
+* **Utilization**
+   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
+   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
+
+##### XGB2
 
 * **Amount Past Due**
    * Without Monotonicity:
@@ -254,128 +333,70 @@
    ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20monotonic%20utilization.png)
    * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
 
-#### Local Explainability
+### Local Explainability
 
-##### LIME and SHAP
+#### LIME and SHAP
 
-![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
-*  **LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP have different rankings and effects for the other features.**
+* **LIME: Explains creating a surrogate (smaller, simpler)  model. Then approximates predictions**
+   * The "effect" in LIME refers to the impact of each feature on the predicted outcome for the selected instance. Positive coefficients indicate that the feature has a positive effect on the prediction, while negative coefficients indicate a negative effect.
+   * The "weight" in LIME refers to the importance of each feature in the overall explanation.
+* **SHAP:** 
+   * F(x) refers to the prediction of the machine learning model for a given data point x, while E[F(x)] refers to the expected prediction of the model over a background dataset. 
+   * If F(x) and E[F(x)] are close to each other, it suggests that the model is making predictions that are consistent with the overall behavior of the dataset. 
+   * If there is a large difference between F(x) and E[F(x)], it suggests that the model makes predictions that are significantly different from the overall behavior of the dataset, which may indicate bias or overfitting.
+   * Positive values indicate that the feature contributes positively to the prediction, while negative values indicate that the feature contributes negatively. The size of the SHAP value indicates the magnitude of the feature's influence.
 
-#### Global Interpretability
+##### GAMI-Net
 
-![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
+![GAMI-Net Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
 
-#### Local Interpretability
+##### ReLU-DNN
 
-![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
+![ReLU-DNN Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
 
-### GAMI-Net
+##### XGB2
 
-#### Global Explainability
+![XGB2 Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
+*  **LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP disagree in the rankings and effects of the other features o the target variable Status.**
 
-##### Permutation Feature Importance (PFI)
+### Global Interpretability
 
-![GAMI-Net PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20pfi.png)
-* **Delinquency Status is the most influencial feature in this model**
-* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
+* **Refers to the ability to understand how a machine learning model makes predictions across the entire dataset or population.**
+* **Involves techniques that help to identify the most important features or patterns in the data that contribute to the model's predictions.**
+* **Technique(s): feature importance values.**
+* **Helps identify biases or issues in the model and provides insights for improving the model's performance.**
 
-##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
-
-* **Balance**
-   * Without Monotonicity:
-   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20balance.png)
-   * With Monotonicity:
-   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20balance.png)
-   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
-   
-* **Delinquency Status**
-   * Without Monotonicity:
-   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20delinquency%20status.png)
-   * With Monotonicity:
-   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20delinquency%20status.png)
-   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
-   
-* **Mortgage**
-   * Without Monotonicity:
-   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20mortgage.png)
-   * With Monotonicity:
-   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20mortgage.png)
-   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
-  
-* **Utilization**
-   * Without Monotonicity:
-   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20utilization.png)
-   * With Monotonicity:
-   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20monotonic%20utilization.png)
-   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
-
-#### Local Explainability
-
-##### LIME and SHAP
-
-![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
-* **
-
-#### Global Interpretability
+#### GAMI-Net
 
 ![GAMI-Net Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20global%20interpretability.png)
 * **The most influencial features when predicting Status are Delinquency Status, Utilization, Mortgage, and Balance.**
 
-#### Local Interpretability
-
-![GAMI-Net Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20local%20interpretability%2Cpng.png)
-* **
-
-### ReLU-DNN
-
-#### Global Explainability
-
-##### Permutation Feature Importance (PFI)
-
-![ReLU-DNN PFI](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20pfi.png)
-* **Delinquency Status is the most influencial feature in this model**
-* **Utilization, Mortgage, and Balance have a significant impact on the response variable (Status)**
-
-##### Partial Dependency Plot (PDP) and Accumulated Local Effects (ALE)
-
-* **Amount Past Due**
-   ![Amount Past Due](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20amount%20past%20due.png)
-   * There is a negative relationship between Status approval and Amount Past Due. As Amount Past Due increases, the probability of that individual not defaulting decreases and defaulting increases.
-
-* **Balance**
-   ![Balance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20balance.png)
-   * There is a positive relationship between Status approval and Balance. As Balance increases, the probability of that individual not defaulting increases and defaulting decreases.
-   
-* **Credit Inquiry**
-   ![Credit Inquiry](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20credit%20inquiry.png)
-   * There is a negative relationship between Status approval and Credit Inquiry. As Credit Inquiry increases, the probability of that individual not defaulting decreases and defaulting increases.
-   
-* **Delinquency Status**
-   ![Delinquency Status](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20delinquency%20status.png)
-   * There is a negative relationship between Status approval and Delinquency Status. As Delinquency Status increases, the probability of that individual not defaulting decreases and defaulting increases.
-
-* **Mortgage**
-   ![Mortgage](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20mortgage.png)
-   * There is a positive relationship between Status approval and Mortgage. As Mortgage increases, the probability of that individual not defaulting increases and defaulting decreases.
-   
-* **Utilization**
-   ![Utilization](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20utilization.png)
-   * There is a negative relationship between Status approval and Utilization. As Utilization increases, the probability of that individual not defaulting decreases and defaulting increases.
-
-#### Local Explainability
-
-##### LIME and SHAP
-
-![Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
-* **
-
-#### Global Interpretability
+#### ReLU-DNN
 
 ![ReLU-DNN Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20global%20interpretability.png)
 
-#### Local Interpretability
+#### XGB2
+
+![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
+
+### Local Interpretability
+
+* **Refers to the ability to understand how a machine learning model makes predictions for individual inputs or instances.**
+* **Involves techniques that help identify the most important features or patterns in the data that contribute to the model's prediction for a specific input.**
+* **Technique(s): local feature importance, local effect importance, and surrogate models.**
+* **Helps build trust in the model by providing explanations for individual predictions and provides insights for improving the model's performance at the local level.**
+
+#### GAMI-Net
+
+![GAMI-Net Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20local%20interpretability%2Cpng.png)
+
+#### ReLU-DNN
 
 ![ReLU-DNN Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20local%20interpretability.png)
+
+#### XGB2
+
+![XGB2 Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20local%20interpretability.png)
 
 ## Model Robustness
 
