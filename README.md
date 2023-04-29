@@ -458,15 +458,6 @@
 
 ### Model Fairness
 
-#### XGB2 Adverse Impact Ratio (AIR)
-
-| Protected Groups | AIR |
-| ---------------- | --- |
-| Gender 0 | 0.916539 |
-| Race 0 | 0.933909 |
-
-![XGB2 new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20new%20fairness.png)
-
 #### GAMI-Net Adverse Impact Ratio (AIR)
 
 | Protected Groups | AIR |
@@ -484,6 +475,15 @@
 | Race 0 | 0.954666 |
 
 ![ReLU-DNN new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20new%20fairness.png)
+
+#### XGB2 Adverse Impact Ratio (AIR)
+
+| Protected Groups | AIR |
+| ---------------- | --- |
+| Gender 0 | 0.916539 |
+| Race 0 | 0.933909 |
+
+![XGB2 new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20new%20fairness.png)
 
 ### Model Comparison to Black-Box Modeling
 
