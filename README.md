@@ -318,10 +318,6 @@
 | 2 | ReLU-DNN | 0.6608 | 0.7023 | 0.7034 | 0.6615 | 0.7013 | 0.7056 |
 | 3 | GAMI-Net | 0.6587 | 0.7044 | 0.6966 | 0.6599 | 0.7040 | 0.6987 |
 
-### Model Interpretability
-
-![New Model Interpretability]()
-
 ### Model Robustness
 
 ![New Model Robustness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/new%20model%20robustness.png)
