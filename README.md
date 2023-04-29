@@ -319,10 +319,12 @@
 #### Global Interpretability
 
 ![GAMI-Net Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20global%20interpretability.png)
+* **The most influencial features when predicting Status are Delinquency Status, Utilization, Mortgage, and Balance.**
 
 #### Local Interpretability
 
 ![GAMI-Net Local Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20local%20interpretability%2Cpng.png)
+* **
 
 ### ReLU-DNN
 
