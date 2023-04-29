@@ -281,7 +281,7 @@
 
 ## Model Fairness
 
-* **Model fairness is vital to selecting the right model by ethical and regulatory standards. A model should be independent of an individual's race and gender. Discrimination is faced by groups as a whole or even as individuals who do not receive similar treatment. We measured model fairness using the Adverse Impact Ratio (AIR). This is calculated as follows:  (P(Y ̂=1│A=a))/(P(Y ̂=1│A=b) ). The general threshold for AIR is 0.8, but banks prefer to use a threshold of 0.9. There are multiple methods in PiML to adjust for AIR, such as segmenting, thresholding, binning and feature removal. In this case, the team has opted to use the binning method.**
+* **Model fairness is vital to selecting the right model by ethical and regulatory standards. A model should be independent of an individual's race and gender. Discrimination is faced by groups as a whole or even as individuals who do not receive similar treatment. We measured model fairness using the Adverse Impact Ratio (AIR). The general threshold for AIR is 0.8, but banks prefer to use a threshold of 0.9. There are multiple methods in PiML to adjust for AIR, such as segmenting, thresholding, binning and feature removal. In this case, the team has opted to use the binning method.**
 
 ### XGB2 Adverse Impact Ratio (AIR)
 
