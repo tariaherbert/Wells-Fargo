@@ -132,6 +132,7 @@
    * captures non linear relationships, non monotonic patterns using splines
 * **and**
    * lack interpretability if the smooth functions are complex. GAMI-Net is different than GAM because it models the interactions between variables using a neural networks smoothing approach, which allows the model to capture complex non-linear interactions between variables.
+* **Formula: g(E(y|x)) = μ + ∑ hj(xj) + ∑ f jk (xj,xk)**
 * **Advantages**:
    * Flexible, it captures complex interactions which improves accuracy
    * Handles linear and non linear relationships between variables
