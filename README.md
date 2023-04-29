@@ -39,7 +39,7 @@
 ## Model Details
 * **Columns used as inputs in the final model**: 
 * **Column used as target in the final model**: 'Status'
-* **Type of final model**: 
+* **Type of final model**: GAMI-Net
 * **Software used to implement the models**: Numpy, PiML, Python, XGBoost
 * **Version of the modeling software**: 
    * Numpy version: 1.23.5
