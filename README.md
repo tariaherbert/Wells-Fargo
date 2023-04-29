@@ -374,7 +374,7 @@
 #### ReLU-DNN
 
 ![ReLU-DNN Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20global%20interpretability.png)
-* **The most influencial features when predicting Status are Mortgage, Delinquency Status, and Balance.
+* **The most influencial features when predicting Status are Mortgage, Delinquency Status, and Balance.**
 
 #### XGB2
 
