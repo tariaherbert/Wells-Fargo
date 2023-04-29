@@ -324,7 +324,7 @@
 
 ### Model Robustness
 
-![New Model Robustness]()
+![New Model Robustness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/new%20model%20robustness.png)
 
 ### Model Comparison to Black-Box Modeling
 
