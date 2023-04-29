@@ -374,10 +374,12 @@
 #### ReLU-DNN
 
 ![ReLU-DNN Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20global%20interpretability.png)
+* **The most influencial features when predicting Status are
 
 #### XGB2
 
 ![XGB2 Global Interpretability](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20global%20interpretability.png)
+* **The most influencial features when predicting Status are Amount Past Due, Utilization, Mortgage, and Balance.**
 
 ### Local Interpretability
 
