@@ -68,6 +68,112 @@
 ![Feature Importance](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/feature%20importance.png)
 * **The feature importance plot displays how useful and often a model finds each feature when making accurate predictions about the target variable. Amount Past Due and Utilization are used the most in the machine learning models. Open Trade was removed from the models because it has no influence when making prediction about the target variable (Status).** 
 
+## Methodology
+
+### Classification and Regression Decision Trees (CART)
+
+* **CART models are developed by selecting predictive variables and evaluating the different split points of each predictor until the ideal tree is produced.**
+* **Formula: f(x) = 1 - Σ (Pi)2**
+* **Advantages**:
+   * Interpretable for Relatively Moderate-Sized Trees
+   * Flexible (classification and regression)
+   * Relatively Robust Against Noise
+* **Disadvantages**:
+   * Unstable
+   * Difficult to Understand Individual Feature Contribution
+   * Interpretability Declines for Larger Trees
+   * Prone to Overfitting
+   * High Variance
+
+### Explainable Boosting Machine (EBM)
+
+* **EBM models are similar to GAM models, however unlike GAM models, EBM models can automatically detect and include pairwise interaction terms.**
+* **Formula: g(E[y]) = b0 + ∑ fj(xj) + ∑ fij(xi,xj)**
+* **Advantages**:
+   * Better predictive power
+   * One of the fastest models to execute at prediction time
+   * Light memory usage
+   * Fast computation
+   * Nice visualization
+   * Good support from Microsoft Research
+* **Disadvantages**:
+   * Runs slower than other models
+   * Non-smooth and jumpy shape functions
+   * Lacking monotonicity constraint
+   * Lacking pruning for main effects
+
+### Fast Interpretable Greedy-Tree Sums (FIGS)
+
+* **FIGS models are developed by adding predictor variables one by one while considering the split for an ensemble of trees.**
+* **Formula: f(x) = Σ fk(Pk(x)) + f0**
+* **Advantages**:
+   * Interpretable for Relatively Small-Sized Trees
+   * Flexible (used for both classification and regression)
+   * Relatively Robust Against Noise
+   * More Stable than CART models
+   * Decouples Feature Interactions
+* **Disadvantages**:
+   * Less Interpretable than CART Models (Difficult to Follow Multiple Separate Trees)
+   * Prone to Overfitting
+   * High Variance
+
+### Generalized Additive Model (GAM)
+
+* **GAM is a linear model with a key difference when compared to Generalised Linear Models such as Linear Regression. A GAM is allowed to learn non-linear features. The sum of many splines forms a GAM. The result is a highly flexible model which still has some of the explainability of a linear regression.**
+* **Formula: y = g(μ) = b0 + f(x1) + f(x2)... + f(xp)**
+* **Advantages**:
+   * Very flexible in choosing non-linear models
+   * Because of the additivity we can still interpret the contribution of each predictor while considering the other predictors fixed.
+   * GAMs may outperform linear models in terms of prediction.
+
+### Generalized Additive Model with Structured Interactions (GAMI-Net)
+
+* **GAMI-Net models are similar to GAM models as they both**:
+   * captures non linear relationships, non monotonic patterns using splines
+* **and**
+   * lack interpretability if the smooth functions are complex. GAMI-Net is different than GAM because it models the interactions between variables using a neural networks smoothing approach, which allows the model to capture complex non-linear interactions between variables.
+* **Advantages**:
+   * Flexible, it captures complex interactions which improves accuracy
+   * Handles linear and non linear relationships between variables
+* **Disadvantages**:
+   * Computationally intensive
+   * It can be a non interoperable model depending on features selection due to its neural network approach
+
+### Generalized Linear Model (GLM)
+
+* **GLM is a flexible generalization of ordinary linear regression. The GLM model generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.**
+* **Formula: y =  β0 +β1x1i + ... + βpxpi**
+* **Advantages**:
+   * Very easy to understand and explain
+* **Disadvantages**:
+   * Tends to focus only on linear relationships, Unable to detect nonlinearity directly 
+   * Lower performance in comparison to other models
+
+### Deep ReLU Networks using Aletheia Unwrapper and Sparsification (ReLU-DNN)
+
+* **The ReLU-DNN model is a type of deep neural network that uses the Rectified Linear Unit (ReLU) activation function in its hidden layers. The ReLU function allows the network to learn complex, non-linear relationships between the input data and the output labels. During training, the weights of the network are updated using an optimization algorithm to minimize a loss function that measures the difference between the predicted outputs and the true labels.**
+* **Formula: f(x) = max(0,x)**
+* **Advantages**:
+   * Effective at learning non-linear relationships between inputs and outputs
+   * Suitable for large-scale, complex datasets
+   * Relatively fast convergence during training
+   * Avoids the vanishing gradient problem that can occur in deep neural networks when using other activation functions
+   * Has achieved state-of-the-art performance on image classification, speech recognition, and natural language processing
+* **Disadvantages**:
+   * May require large amounts of training data and computational resources
+   * Can be sensitive to the choice of hyperparameters, such as the learning rate and regularization strength
+   * Can be difficult to interpret and understand the learned representations
+
+### Extreme Gradient Boosted Trees of Depth 2 (XGB2)
+
+* **XGB2 refers to a specific variant of the Extreme Gradient Boosted (XGB) Forests model. XGB2 limits the depth of each tree to 2 splits, which allows for pairwise interactions between features.**
+* **Formula: f(x) = ∑ fk(xi)**
+* **Advantages**:
+   * Handles non-linear relationships
+   * Distinguishes interactions between variables better than linear models
+* **Disadvantages**:
+   * Prone to overfitting
+
 ## Model Performance
 
 | Rank | Model | Test ACC | Test AUC | Test F1 Score | Train ACC | Train AUC | Train F1 Score |
