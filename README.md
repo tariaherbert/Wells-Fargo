@@ -93,17 +93,6 @@
 
 ## Explainability and Interpretability
 
-* **Global Explainability**:
-  * Permutation Feature Importance (PFI): computes the change in prediction performance as the measure of feature importance
-   * ji
-  * Partial Dependence Plot (PDP): used to understand how the prediction varies as a function of variables of interest, by averaging over other variables
-   * Accumulated Local Effects (ALE): describes how features affect model prediction
-* ** Local Explainability**:
-   * LIME: 
-   * SHAP: 
-* **Global Interpretability**:
-* **Local Interpretability**:
-
 ### XGB2
 
 #### Global Explainability
