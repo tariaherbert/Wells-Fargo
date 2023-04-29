@@ -332,8 +332,8 @@
 
 | Protected Groups | AIR |
 | ---------------- | --- |
-| Gender 0 |
-| Race 0 |
+| Gender 0 | 0.916539 |
+| Race 0 | 0.933909 |
 
 #### GAMI-Net Adverse Impact Ratio (AIR)
 
@@ -346,8 +346,8 @@
 
 | Protected Groups | AIR |
 | ---------------- | --- |
-| Gender 0 |
-| Race 0 |
+| Gender 0 | 0.990895 |
+| Race 0 | 0.954666 |
 
 ### Model Comparison to Black-Box Modeling
 
