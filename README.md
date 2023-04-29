@@ -335,7 +335,7 @@
 | Gender 0 | 0.916539 |
 | Race 0 | 0.933909 |
 
-![XGB2 new fairness]()
+![XGB2 new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20new%20fairness.png)
 
 #### GAMI-Net Adverse Impact Ratio (AIR)
 
