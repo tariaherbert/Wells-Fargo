@@ -413,15 +413,6 @@
 
 * **Model fairness is vital to selecting the right model by ethical and regulatory standards. A model should be independent of an individual's race and gender. Discrimination is faced by groups as a whole or even as individuals who do not receive similar treatment. We measured model fairness using the Adverse Impact Ratio (AIR). The general threshold for AIR is 0.8, but banks prefer to use a threshold of 0.9. There are multiple methods in PiML to adjust for AIR, such as segmenting, thresholding, binning and feature removal. In this case, the team has opted to use the binning method.**
 
-### XGB2 Adverse Impact Ratio (AIR)
-
-| Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
-| ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
-| Gender 0 | Mortgage | 0.821672 | 0.674150 | 0.928242 | 0.662930 |
-| Race 0 | Mortgage | 0.603988 | 0.674150 | 0.956147 | 0.662930 |
-
-![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
-
 ### GAMI-Net Adverse Impact Ratio (AIR)
 
 | Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
@@ -439,6 +430,15 @@
 | Race 0 | Mortgage | 0.683560 | 0.668010 | 0.908938 | 0.664070 |
 
 ![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20fairness.png)
+
+### XGB2 Adverse Impact Ratio (AIR)
+
+| Protected Groups | Feature Configuration | Original AIR | Original ACC| Binned AIR | Binned ACC |
+| ---------------- | --------------------- | ------------ | ----------- | ---------- | ---------- |
+| Gender 0 | Mortgage | 0.821672 | 0.674150 | 0.928242 | 0.662930 |
+| Race 0 | Mortgage | 0.603988 | 0.674150 | 0.956147 | 0.662930 |
+
+![Binned Mortgage for Race and Gender](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20fairness.png)
 
 ## New Dataset Generation
 
