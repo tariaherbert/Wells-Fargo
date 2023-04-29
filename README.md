@@ -344,7 +344,7 @@
 | Gender 0 | 0.931581 |
 | Race 0 | 0.911592 |
 
-![GAMI-Net new fairness]()
+![GAMI-Net new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20new%20fairness.png)
 
 #### ReLU-DNN Adverse Impact Ratio (AIR)
 
