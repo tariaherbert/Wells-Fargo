@@ -353,7 +353,7 @@
 | Gender 0 | 0.990895 |
 | Race 0 | 0.954666 |
 
-![ReLU-DNN new fairness]()
+![ReLU-DNN new fairness](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20new%20fairness.png)
 
 ### Model Comparison to Black-Box Modeling
 
