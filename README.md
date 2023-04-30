@@ -357,15 +357,17 @@
 ##### GAMI-Net
 
 ![GAMI-Net Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/GAMI-Net%20lime%20%26%20shap.png)
+* **LIME and SHAP disagree on the most influencial feature on Status for Sample 100. LIME suggests that Utilization is the most influential feature with a negative effect on Status, while SHAP suggests that Delinquency Status is the most influencial with a positive effect on Status.**
 
 ##### ReLU-DNN
 
 ![ReLU-DNN Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/ReLU-DNN%20lime%20%26%20shap.png)
+* **LIME and SHAP agree on all the rankings and effects of the features. For Sample 100, Delinquency Status is indicated to be the most influencial feature on Status.**
 
 ##### XGB2
 
 ![XGB2 Sample 100](https://github.com/tariaherbert/Wells-Fargo/blob/main/graphs/XGB2%20lime%20%26%20shap.png)
-*  **LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP disagree in the rankings and effects of the other features o the target variable Status.**
+*  **LIME and SHAP agree that Utilization has the stongest influence on Status for sample 100. For sample 100, Utilization has a negative effect on Status. LIME and SHAP disagree on the rankings and effects of the other features on Status.**
 
 ### Global Interpretability
 
