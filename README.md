@@ -30,14 +30,14 @@
 | Race | excluded | categorical | two kinds of race (0: protected group, 1: reference group)|
 | Status | target | categorical | 0: default (should not be approved) and 1: non-default (should be approved). the 0/1 ratio is nearly 1:5 |
 
-* **Source of training data**: 
+* **Source of training data**: Wells Fargo
 * **How training data was randomly split into training and testing data**: 80% training and 20% testing
 * **Number of rows in training and testing data**:
   * Training rows: 80,000
   * Testing rows: 20,000
 
 ## Model Details
-* **Columns used as inputs in the final model**: 
+* **Columns used as inputs in the final model**: 'Mortgage', 'Balance', 'Amount Past Due', 'Delinquency Status', 'Credit Inquiry', 'Utilization'
 * **Column used as target in the final model**: 'Status'
 * **Type of final model**: GAMI-Net
 * **Software used to implement the models**: Numpy, PiML, Python, XGBoost
@@ -47,6 +47,14 @@
    * Python version: 3.9.16
    * XGBoost version: 1.7.2
 * **Hyperparameters or other settings of the final model**:
+   * N_interactions: default 10
+   * Batch_size: default 1000
+   * Subnet1_size: Set to 5 (default 20)
+   * Subnet2_size: Set to 5 (default 20)
+   * Max_epochs: default 1000
+   * Learning_rates: default 1e-3, 1e-3, 1e-4
+   * Random_state: default 0
+   * Monotonic Settings: monotonic increasing ('Balance', 'Mortgage'), monotonic decreasing ('Amount Past Due',  'Credit Inquiry', 'Delinquency Status', 'Utilization')
 
 ## Exploratory Data Analysis
 
