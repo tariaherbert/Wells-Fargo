@@ -2,7 +2,7 @@
 
 ## Basic Information
 
-* **Organization Developing Model**: GWU Wells Fargo Credit Modeling Team
+* **Organization or People Developing Model**: GWU Wells Fargo Credit Modeling Team (Members: Taria Herbert, Pranita Shetty, Runtong Jiang, Bader Albaarrak, Jialiang Chen, and Le Zhang)
 * **Model Date**: May, 2023
 * **Model Version**: 1.0
 * **License**: Apache 2.0
