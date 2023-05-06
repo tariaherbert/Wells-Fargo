@@ -526,4 +526,4 @@
 * **Run a cost benefit analysis**
 
 ## Author Contributions
-* **TH served as the primary contributor for the model card. PS served as the primary contributor for the PiML colaboratory notebook. PS & BA contributed equally when analyzing GAMI-Net. JC & LZ contributed equally when analyzing ReLU-DNN. TH & RJ contributed equally when analyzing XGB2. PS, TH, RJ, & BA contributed equally when analyzing model fairness. PS & RJ contributed when testing for bias and generating new dataset. All members contributed equally when analyzing model performance and robustness. 
+* **TH served as the primary contributor for the model card. PS served as the primary contributor for the PiML colaboratory notebook. PS & BA contributed equally when analyzing GAMI-Net. JC & LZ contributed equally when analyzing ReLU-DNN. TH & RJ contributed equally when analyzing XGB2. PS, TH, RJ, & BA contributed equally when analyzing model fairness. PS & RJ contributed when testing for bias and generating new dataset. All members contributed equally when analyzing model performance and robustness.**
